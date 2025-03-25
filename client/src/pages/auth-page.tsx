@@ -29,11 +29,6 @@ export default function AuthPage() {
   const [location, navigate] = useLocation();
   const { toast } = useToast();
 
-  // Redirect to home if already logged in
-  if (user) {
-    return <Redirect to="/" />;
-  }
-
   const loginForm = useForm<z.infer<typeof loginSchema>>({
     resolver: zodResolver(loginSchema),
     defaultValues: {
@@ -67,6 +62,11 @@ export default function AuthPage() {
       },
     });
   };
+  
+  // Redirect to home if already logged in - moved AFTER all hooks and functions
+  if (user) {
+    return <Redirect to="/" />;
+  }
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
