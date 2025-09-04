@@ -9,3 +9,6 @@
 <a href="https://96499545-d8ab-4c52-8552-e3c6e9bdb08f.plotly.app/" target="_blank">S&P 500 Stock Market Analysis</a></br>
 <a href="https://huggingface.co/spaces/frankthtank/cava-ai?logs=container" target="_blank">AI Agent based Climate Adaption & Vulnerability Analysis</a></br>
 <a href="https://huggingface.co/spaces/frankthtank/ca-zev-analytics" target="_blank">California Zero Emmissions Vehicle Trends</a></br></br>
+
+## Studies
+<a href="ewa.md" target="_blank">Extreme Weather Event Temperature Analysis</a></br>
