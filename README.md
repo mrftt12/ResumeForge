@@ -1,5 +1,7 @@
-# ResumeForge - Projects
+# ResumeForge
+<a href="https://mrftt12.github.io/ResumeForge/" target="blank">Resume Page</a></br><br>
 
+## Projects
 <a href="https://temposeer--0000001.whitepebble-044991e0.westus.azurecontainerapps.io">TempoSeer: Agentic AI Powered Forecasting</a></br>
 <a href="#">Time Series Pro: Automated Time Series Forecasting</a></br>
 <a href="https://21e899e3-bcb8-4aaf-bb55-afb5277e26c7.plotly.app/">Energy Demand Weather Analysis</a></br>
