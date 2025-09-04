@@ -1,5 +1,5 @@
 # ResumeForge
-<a href="https://mrftt12.github.io/ResumeForge/" target="blank">Resume Page</a></br><br>
+<a href="https://mrftt12.github.io/ResumeForge/" target="_blank">Resume Page</a></br><br>
 
 ## Projects
 <a href="https://temposeer--0000001.whitepebble-044991e0.westus.azurecontainerapps.io">TempoSeer: Agentic AI Powered Forecasting</a></br>
