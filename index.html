@@ -10,170 +10,178 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            line-height: 1.6;
+            line-height: 1.5;
         }
         .section-title {
             position: relative;
             padding-bottom: 0.5rem;
-        }
-        .section-title:after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 3rem;
-            height: 3px;
-            background: #3b82f6;
+            border-bottom: 2px solid #3b82f6;
+            margin-bottom: 1rem;
         }
         .timeline-item {
-            position: relative;
-            padding-left: 2rem;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #e5e7eb;
         }
-        .timeline-item:before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0.5rem;
-            width: 1rem;
-            height: 1rem;
-            border-radius: 50%;
-            background: #3b82f6;
-        }
-        .timeline-item:after {
-            content: '';
-            position: absolute;
-            left: 0.5rem;
-            top: 1.5rem;
-            bottom: -2rem;
-            width: 2px;
-            background: #e5e7eb;
-        }
-        .timeline-item:last-child:after {
-            display: none;
+        .timeline-item:last-child {
+            border-bottom: none;
         }
         .skill-pill {
             display: inline-block;
-            background: #e0f2fe;
-            color: #0369a1;
-            padding: 0.25rem 0.75rem;
-            border-radius: 9999px;
-            margin: 0.25rem;
-            font-size: 0.875rem;
+            background: #f1f5f9;
+            color: #475569;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            margin: 0.125rem;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        @media print {
+            .bg-gray-50 { background: white !important; }
+            .shadow { box-shadow: none !important; }
         }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
-    <div class="max-w-4xl mx-auto px-4 py-8 md:py-12">
+<body class="bg-white text-gray-800">
+    <div class="max-w-4xl mx-auto px-6 py-8">
         <!-- Header Section -->
-        <header class="mb-8">
-            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-6">
-                <div>
-                    <h1 class="text-3xl md:text-4xl font-bold text-gray-900">Frank M. Gonzales, <span class="text-blue-600">P.E., M.S.E.E</span></h1>
-                    <p class="text-lg text-gray-600">Senior Analytics Engineer | Data & Analytics Leader</p>
+        <header class="mb-8 border-b-2 border-gray-200 pb-6">
+            <div class="text-center mb-4">
+                <h1 class="text-4xl font-bold text-gray-900 mb-2">Frank M. Gonzales</h1>
+                <h2 class="text-xl text-blue-600 font-semibold mb-3">P.E., M.S.E.E | Senior Power Systems Professional | Data & Analytics Leader</h2>
+                <div class="flex justify-center space-x-6 text-sm text-gray-600">
+                    <span>Orange, CA</span>
+                    <span>(657) 749–3122</span>
+                    <span>frank@thtank.com</span>
                 </div>
-                <div class="mt-4 md:mt-0 text-right">
-                    <p class="text-gray-700"><i data-feather="map-pin" class="inline mr-2"></i> Orange, CA</p>
-                    <p class="text-gray-700"><i data-feather="phone" class="inline mr-2"></i> (657) 749–3122</p>
-                    <p class="text-gray-700"><i data-feather="mail" class="inline mr-2"></i> mrftt@yahoo.com</p>
-                </div>
-            </div>
-            <div class="bg-white rounded-lg shadow p-6">
-                <p class="text-gray-700">
-                    Data-driven engineer with 20+ years of experience translating complex requirements into actionable insights. 
-                    Proven track record in building scalable data pipelines, architecting cloud-based analytics platforms, 
-                    and delivering high-impact data products that empower stakeholders across engineering, product, and operations. 
-                    Adept at SQL, Snowflake, dbt-style modeling, Python, and cloud platforms (AWS, GCP, Azure). 
-                    Recognized for clarity, collaboration, and driving innovation at the intersection of data, engineering, and business strategy.
-                </p>
             </div>
         </header>
 
-        <!-- Main Content -->
+        <!-- Professional Summary -->
+        <section class="mb-8">
+            <h2 class="text-xl font-bold mb-4 section-title">PROFESSIONAL SUMMARY</h2>
+            <p class="text-gray-700 text-sm leading-relaxed">
+                Highly technical power systems professional and data-driven engineer offering extensive experience in
+                power systems engineering, data engineering, data science, software development, and architecture.
+                Proven track record in building scalable data pipelines, architecting cloud-based analytics platforms, and
+                delivering high-impact data products that empower stakeholders across engineering, product, and
+                operations. Adept at SQL, Snowflake, power systems modeling, scripting, and cloud platforms (AWS,
+                GCP, Azure, Databricks). Recognized for clarity, collaboration, and driving innovation at the
+                intersection of data, engineering, and business strategy.
+            </p>
+        </section>
+
+        <!-- Two Column Layout -->
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <!-- Left Column -->
-            <div class="lg:col-span-2 space-y-8">
+            <div class="lg:col-span-2">
                 <!-- Professional Experience -->
-                <section>
-                    <h2 class="text-2xl font-bold mb-6 section-title">Professional Experience</h2>
-                    
+                <section class="mb-8">
+                    <h2 class="text-xl font-bold mb-4 section-title">PROFESSIONAL EXPERIENCE</h2>
+
                     <div class="timeline-item">
-                        <h3 class="text-xl font-semibold text-gray-900">Senior Engineer – Data & Analytics</h3>
-                        <p class="text-blue-600 font-medium">Southern California Edison | 2022 – 2025</p>
-                        <ul class="mt-2 list-disc pl-5 space-y-1 text-gray-700">
-                            <li>Designed and maintained Snowflake-based data pipelines to perform load profile and geospatial analytics supporting electrification planning.</li>
-                            <li>Developed Streamlit applications integrated with Snowflake to deliver self-service analytics for business users.</li>
-                            <li>Implemented data validation workflows ensuring reliability and accuracy across large-scale grid datasets.</li>
-                            <li>Partnered with Product and Customer Insights teams to deliver actionable data products that supported early electrification initiatives.</li>
-                            <li>Optimized data pipelines and geospatial models for performance and scalability.</li>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-gray-900">Senior Engineer – Research & Development</h3>
+                            <span class="text-sm text-gray-600">2025</span>
+                        </div>
+                        <p class="text-blue-600 font-medium mb-3">ETAP</p>
+                        <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700">
+                            <li>Algorithm Development: Develop and refine optimization algorithms for unbalanced power flow, DER sizing, and more. Improve scalability and performance of existing models.</li>
+                            <li>System Modeling & Simulation: Build and validate power system models (generation, transmission, distribution). Simulate scenarios to test optimization under real-world conditions.</li>
+                            <li>Research & Innovation: Stay ahead of trends in smart grids and energy markets. Contribute to research, white papers and technical presentations.</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-gray-900">Senior Engineer – Scenario Planning</h3>
+                            <span class="text-sm text-gray-600">2022 – 2025</span>
+                        </div>
+                        <p class="text-blue-600 font-medium mb-3">Southern California Edison</p>
+                        <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700">
+                            <li>Lead scenario and special studies to advance key technologies and ensure innovation in grid planning. Developed and documented actionable plans for grid design and operations improvements. Studies included transformer loading criteria analysis, high transportation electrification, and LA 2028 Olympics</li>
+                            <li>Implemented data validation workflows ensuring reliability and accuracy across large-scale grid datasets. Created data pipelines and algorithms for BESS deployments, grid flexibility using automated switches and load profile analytics.</li>
+                            <li>Lead early electrification customer insights (EECI) initiative on behalf of engineering organization. Created Snowflake data warehouse to consolidate transportation electrification data trackers.</li>
+                            <li>Customer Outreach Support Specialist on behalf of Business Resiliency in support of the Incident Command Team for all-hazards events and Public Safety Power Shutoffs (PSPS)</li>
                         </ul>
                     </div>
                     
                     <div class="timeline-item">
-                        <h3 class="text-xl font-semibold text-gray-900">Senior Engineer – Grid Analytics & Machine Learning</h3>
-                        <p class="text-blue-600 font-medium">Southern California Edison | 2015 – 2022</p>
-                        <ul class="mt-2 list-disc pl-5 space-y-1 text-gray-700">
-                            <li>Technical Lead, EPIC II & III projects: developed hazard and storm impact prediction models leveraging ML to forecast equipment failures.</li>
-                            <li>Administered and optimized a Hadoop cluster for advanced analytics workloads.</li>
-                            <li>Built load forecasting models integrated into enterprise grid analytics platforms.</li>
-                            <li>Created machine learning–based storm analytics tools, delivering proactive damage prediction and mitigation strategies.</li>
-                            <li>Developed enterprise data integration and business intelligence reporting pipelines.</li>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-gray-900">Senior Engineer – Grid Analytics & Machine Learning</h3>
+                            <span class="text-sm text-gray-600">2015 – 2022</span>
+                        </div>
+                        <p class="text-blue-600 font-medium mb-3">Southern California Edison</p>
+                        <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700">
+                            <li>Technical Lead, EPIC II & EPIC III projects: developed hazard and storm impact prediction models leveraging ML to forecast equipment failures.</li>
+                            <li>Translate advanced analytics use cases for SCE into technical approaches that yield actionable recommendations, across multiple, diverse domains; communicate results and educate others through design and build of insightful visualizations, reports, and presentations</li>
+                            <li>Work in cross-disciplinary teams with Data Science industry experts to understand SCE needs and ingest data sources both internal/external to SCE including lab data and operational data. Performed actions to architect, design, prototype, and implement architectures to tackle the Big Data and Data Science needs for EPIC demonstration projects.</li>
+                            <li>Research, experiment, and utilize leading Big Data methodologies, such as Hadoop, Spark, Hive, Impala, SAP HANA, and Oracle Big Data Technology Stack and optimized a Hadoop cluster for advanced analytics workloads. Built load forecasting models integrated into enterprise grid analytics platforms. Created machine learning–based storm analytics tools, delivering proactive damage prediction and mitigation strategies.</li>
                         </ul>
                     </div>
                     
                     <div class="timeline-item">
-                        <h3 class="text-xl font-semibold text-gray-900">Power System Planner – Data Architecture & Analytics</h3>
-                        <p class="text-blue-600 font-medium">Southern California Edison | 2008 – 2015</p>
-                        <ul class="mt-2 list-disc pl-5 space-y-1 text-gray-700">
-                            <li>Designed and optimized data warehouse architecture to support strategic planning and reporting.</li>
-                            <li>Delivered BI dashboards and analytics reports to stakeholders, enabling data-driven decision-making.</li>
-                            <li>Led cross-functional system engineering and enterprise-level analytics initiatives.</li>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-gray-900">Power System Planner – Data Architecture & Analytics</h3>
+                            <span class="text-sm text-gray-600">2008 – 2015</span>
+                        </div>
+                        <p class="text-blue-600 font-medium mb-3">Southern California Edison</p>
+                        <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700">
+                            <li>Lead system engineering activities for SCE's Integrated Capacity Analysis public web map per CPUC mandate. This involved detailed, first of its kind distribution feeder modeling for simulations and advanced python scripting for processing time-series data from SCADA & AMI systems.</li>
+                            <li>Led cross-functional system engineering and enterprise-level analytics initiatives gaining extensive skills in business requirement capture and translation, hypothesis-driven consulting, work stream and project management, and client relationship development both internally and with external partners.</li>
+                            <li>Fluency in several programming languages such as Python, Java, and C++, with the ability to pick up new languages and technologies quickly; understanding of cloud and distributed systems principles, including load balancing, networks, scaling, in-memory vs. disk, etc.; and experience with large-scale, big data methods, such as MapReduce, Hadoop, Spark, Hive, Impala, Kafka.</li>
+                            <li>Strong grasp of algorithms and data structures; Highly skilled in databases including database design, modeling and implementation. Developed enterprise data integration and business intelligence reporting pipelines. Delivered BI dashboards and analytics application to internal stakeholders, enabling data-driven decision-making.</li>
                         </ul>
                     </div>
                     
                     <div class="timeline-item">
-                        <h3 class="text-xl font-semibold text-gray-900">Engineer – Distribution & Substation Planning</h3>
-                        <p class="text-blue-600 font-medium">Southern California Edison | 2002 – 2008</p>
-                        <ul class="mt-2 list-disc pl-5 space-y-1 text-gray-700">
-                            <li>Built, analyzed, and optimized large-scale power system datasets, delivering insights for operational planning.</li>
-                            <li>Performed data-driven scenario analysis (N-1, contingency, VAR, and load forecasting).</li>
-                            <li>Supported grid operations during critical storm events with real-time analytics.</li>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-gray-900">Engineer – Distribution & Substation Planning</h3>
+                            <span class="text-sm text-gray-600">2002 – 2008</span>
+                        </div>
+                        <p class="text-blue-600 font-medium mb-3">Southern California Edison</p>
+                        <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700">
+                            <li>Built, analyzed, and optimized large-scale power system datasets, delivering insights for operational planning. Performed data-driven scenario analysis (N-1, contingency, VAR, and load forecasting). Design new overhead and underground distribution circuits to serve new load and maintain/improve system integrity and reliability out of Yucaipa Substation</li>
+                            <li>Responsible for Subtransmission System Planning, including A-Bank Planning, Circuit Design, VAR Planning, line assessments, contingency analysis, and technical investments justification for the Walnut 66kV,16kV and 12kV Systems. Supported grid operations during critical storm events with real-time analytics. Performed short circuit duty studies, fuse coordination studies, automatic re-closer coordination studies. Resolved any civil, electrical, and wiring discrepancies on drawings.</li>
+                            <li>Challenged to modernize distribution system planning software; this included creation of an enterprise scale relational database application interface for analyzing distribution and sub-transmission VAR requirements, substation peak & temperature normalization analysis, load growth analysis, load balancing, sub-transmission lines analysis, project initiation, project work-order tracking, duct bank temperature analysis, and heat storm tracking.</li>
                         </ul>
                     </div>
                 </section>
 
                 <!-- Publications -->
-                <section>
-                    <h2 class="text-2xl font-bold mb-6 section-title">Publications</h2>
-                    <ul class="space-y-3">
-                        <li class="flex items-start">
-                            <i data-feather="file-text" class="mr-3 mt-1 text-blue-600"></i>
-                            <span>Distribution System Planning for Growth in Residential EV Adoption, IEEE Transactions on Smart Grid, 2022</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i data-feather="file-text" class="mr-3 mt-1 text-blue-600"></i>
-                            <span>Association Rule Mining for Localizing Solar Power in Distribution Feeders, IEEE Transactions on Smart Grid, 2020</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i data-feather="file-text" class="mr-3 mt-1 text-blue-600"></i>
-                            <span>Advanced Data Analytics at SCE, DistribuTECH 2019</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i data-feather="file-text" class="mr-3 mt-1 text-blue-600"></i>
-                            <span>Storm Impact Prediction</span>
-                        </li>
+                <section class="mb-8">
+                    <h2 class="text-xl font-bold mb-4 section-title">PUBLICATIONS</h2>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li>• Distribution System Planning for Growth in Residential EV Adoption, IEEE Transactions on Smart Grid, 2022</li>
+                        <li>• Association Rule Mining for Localizing Solar Power in Distribution Feeders, IEEE Transactions on Smart Grid, 2020</li>
+                        <li>• Mitigation of Grid Susceptibility Caused by Behind-the-Meter Solar Generation, 2020 IEEE Conference on Technologies for Sustainability</li>
+                        <li>• Advanced Data Analytics at SCE, DistribuTECH 2019</li>
+                        <li>• Storm Impact Prediction Modeling in Distribution Power Systems, IEEE Transactions on Power Systems, 2019</li>
+                        <li>• Weather Normalization of Temperature Sensitive Loads, IEEE Transactions on Power Systems, 2017</li>
+                        <li>• Development of an Underground Cable Temperature Calculation Program using the Neher-McGrath Method, IEEE Transaction on Power Systems, 2010</li>
+                    </ul>
+                </section>
+
+                <!-- Professional Affiliations -->
+                <section class="mb-8">
+                    <h2 class="text-xl font-bold mb-4 section-title">PROFESSIONAL AFFILIATIONS</h2>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li>• State of California Registered Professional Engineer - License No. 17657</li>
+                        <li>• Member of IEEE, Power Engineering Society</li>
                     </ul>
                 </section>
             </div>
 
             <!-- Right Column -->
-            <div class="space-y-8">
+            <div>
                 <!-- Core Competencies -->
-                <section>
-                    <h2 class="text-2xl font-bold mb-6 section-title">Core Competencies</h2>
-                    <div class="bg-white rounded-lg shadow p-6">
-                        <h3 class="font-semibold text-gray-900 mb-3">Data Engineering & Analytics</h3>
-                        <div class="mb-4">
+                <section class="mb-8">
+                    <h2 class="text-xl font-bold mb-4 section-title">CORE COMPETENCIES</h2>
+                    
+                    <div class="mb-4">
+                        <p class="text-gray-700 text-sm mb-3">• Fast learner and team player who quickly adapts to different contexts.</p>
+                        <h3 class="font-semibold text-gray-900 mb-2 text-sm">Data Engineering & Analytics</h3>
+                        <div class="mb-3">
                             <span class="skill-pill">SQL</span>
                             <span class="skill-pill">Snowflake</span>
                             <span class="skill-pill">dbt</span>
@@ -182,24 +190,31 @@
                             <span class="skill-pill">Pandas</span>
                             <span class="skill-pill">Scikit-learn</span>
                         </div>
-                        
-                        <h3 class="font-semibold text-gray-900 mb-3">Cloud Platforms</h3>
-                        <div class="mb-4">
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h3 class="font-semibold text-gray-900 mb-2 text-sm">Cloud Platforms</h3>
+                        <div class="mb-3">
                             <span class="skill-pill">AWS</span>
                             <span class="skill-pill">GCP</span>
                             <span class="skill-pill">Azure</span>
+                            <span class="skill-pill">Databricks</span>
                         </div>
-                        
-                        <h3 class="font-semibold text-gray-900 mb-3">Data Modeling</h3>
-                        <div class="mb-4">
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h3 class="font-semibold text-gray-900 mb-2 text-sm">Data Modeling</h3>
+                        <div class="mb-3">
                             <span class="skill-pill">Star/Snowflake schemas</span>
                             <span class="skill-pill">ETL/ELT</span>
                             <span class="skill-pill">Geospatial</span>
                             <span class="skill-pill">Time-series</span>
                         </div>
-                        
-                        <h3 class="font-semibold text-gray-900 mb-3">Tools & Systems</h3>
-                        <div class="mb-4">
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h3 class="font-semibold text-gray-900 mb-2 text-sm">Tools & Systems</h3>
+                        <div class="mb-3">
                             <span class="skill-pill">Docker</span>
                             <span class="skill-pill">Git</span>
                             <span class="skill-pill">Hadoop</span>
@@ -208,17 +223,21 @@
                             <span class="skill-pill">CYME</span>
                             <span class="skill-pill">Streamlit</span>
                         </div>
-                        
-                        <h3 class="font-semibold text-gray-900 mb-3">Advanced Analytics</h3>
-                        <div class="mb-4">
+                    </div>
+
+                    <div class="mb-4">
+                        <h3 class="font-semibold text-gray-900 mb-2 text-sm">Advanced Analytics</h3>
+                        <div class="mb-3">
                             <span class="skill-pill">Machine Learning</span>
                             <span class="skill-pill">Forecasting</span>
                             <span class="skill-pill">Predictive Modeling</span>
                             <span class="skill-pill">GenAI Applications</span>
                         </div>
-                        
-                        <h3 class="font-semibold text-gray-900 mb-3">Leadership</h3>
-                        <div>
+                    </div>
+
+                    <div class="mb-4">
+                        <h3 class="font-semibold text-gray-900 mb-2 text-sm">Leadership</h3>
+                        <div class="mb-3">
                             <span class="skill-pill">Cross-functional collaboration</span>
                             <span class="skill-pill">Project management</span>
                             <span class="skill-pill">Stakeholder engagement</span>
@@ -226,6 +245,46 @@
                     </div>
                 </section>
 
+                <!-- Education -->
+                <section class="mb-8">
+                    <h2 class="text-xl font-bold mb-4 section-title">EDUCATION</h2>
+                    <div class="space-y-3">
+                        <div>
+                            <h3 class="font-semibold text-gray-900 text-sm">M.S., Electrical Engineering</h3>
+                            <p class="text-gray-600 text-sm">University of Southern California, 2010</p>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 text-sm">B.S., Electrical Engineering</h3>
+                            <p class="text-gray-600 text-sm">Cal Poly Pomona, 2002</p>
+                            <p class="text-gray-600 text-sm">Minor in Computer Science – Scientific Computer Programming</p>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 text-sm">Project Management Certification</h3>
+                            <p class="text-gray-600 text-sm">Cal Tech Pasadena, 2012</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Projects -->
+                <section>
+                    <h2 class="text-xl font-bold mb-4 section-title">KEY PROJECTS</h2>
+                    <div class="space-y-2 text-sm">
+                        <div><a href="https://tspro.whitepebble-044991e0.westus.azurecontainerapps.io/" class="text-blue-600 hover:underline">TS Pro</a></div>
+                        <div><a href="https://temposeer.whitepebble-044991e0.westus.azurecontainerapps.io/" class="text-blue-600 hover:underline">TempoSEER</a></div>
+                        <div><a href="https://huggingface.co/spaces/frankthtank/cava-ai" class="text-blue-600 hover:underline">CAVA-AI</a></div>
+                        <div><a href="https://huggingface.co/spaces/frankthtank/ca-zev-analytics/" class="text-blue-600 hover:underline">CA ZEV Analytics</a></div>
+                        <div><a href="https://gridcast.streamlit.app/Load_Flow_Analysis" class="text-blue-600 hover:underline">GridCast IRP</a></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
                 <!-- Education -->
                 <section>
                     <h2 class="text-2xl font-bold mb-6 section-title">Education</h2>
