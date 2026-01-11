@@ -15,6 +15,7 @@ TaxGenius:        https://taxgenius.netlify.app/</br>
 FamilyLawAI:      https://familylawai.vercel.app</br>
 PropMagmtAI:      https://propertyai-gamma.vercel.app</br>
 PlantAI:          https://plantai.expo.app</br>
+WeatherApp:       https://weatherappp.expo.app/</br>
 ————————————————————————————————————————————</br>
 DeepLearning:     https://auto-mind-forge.vercel.app</br>
 TS Forecasting:   https://tempo-seer-ai-forecast.vercel.app</br>
