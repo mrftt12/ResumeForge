@@ -17,5 +17,5 @@ We can fit a distribution to the points in the table. We experiment with Gaussia
 
 ￼![Ensemble (historical)  Fit GaussianMixture (N= 52)  Period (2000-2010)  Orange County](https://github.com/user-attachments/assets/bcec292a-be6d-41f9-af5a-add609f4563f)
 
-The chart above essentially computes the 1 - in - X (Year) probability of a heatstorm using a mixture of Guassians (probability distributions) that are aware of physical limits of a temperature range which eliminates unrealistic values.  
+The chart above essentially computes the 1 - in - X (Year) probability of a heatstorm using a mixture of Guassians (probability distributions) that are aware of physical limits of a temperature range which eliminates unrealistic values.  So for Orange County, a temperature of 109 degrees fahrenheight would represent a 1 in 10 year heat storm condition.
 
