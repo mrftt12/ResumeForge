@@ -2,6 +2,13 @@ Frank M Gonzales, PE, MSEE
 https://mrftt12.github.io/ResumeForge/</br>
 ——————————————————————————————————————————</br>
 PSPS OPS:         https://pspsops.com/</br>
+3D Load Flow:     https://3dloadflow.web.app/</br>
+PFA Admin:        https://pml-tool-321424627502.us-central1.run.app/</br>
+DOE Bench:        https://doenv.web.app/</br>
+DOE Streamlit:    https://doe-benchmark-streamlit-321424627502.us-central1.run.app/</br>
+Gridpulse:        https://gridpulse-frontend-321424627502.us-central1.run.app/dashboard</br>
+Power Flow:       https://loadflow-frontend-321424627502.us-central1.run.app/</br>
+Snowflaker:       https://snowflaker-frontend-321424627502.us-central1.run.app/</br>
 DJ Studio Pro:    https://dj-studio-pro.verel.app</br>
 ——————————————————————————————————————————</br>
 GridPulse:        https://gpland.vercel.app</br>
